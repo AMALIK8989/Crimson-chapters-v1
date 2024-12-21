@@ -263,7 +263,7 @@ main{
     align-items: center;
     width: 320px; /* Slightly larger card size */
     height: 120px;
-    
+    flex-direction: column !important;
     border: 2px solid #2c3e50; /* Dark border for contrast */
     background: #fff; /* White background for clean look */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced floating effect */
@@ -869,8 +869,9 @@ main{
     }
 
     .mission-card {
-        width: 100px; /* Smaller card size for smaller screens */
+        width: 270px; /* Smaller card size for smaller screens */
         height: 100px;
+        flex-direction: column !important;
         font-size: 1.5rem; /* Adjust icon size */
     }
 
