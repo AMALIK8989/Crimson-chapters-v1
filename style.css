@@ -865,7 +865,7 @@ main{
     }
 
     .mission-cards {
-        grid-template-columns: repeat(2, 1fr); /* Reduce columns for smaller screens */
+        grid-template-columns: 1fr; /* Reduce columns for smaller screens */
     }
 
     .card {
