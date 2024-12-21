@@ -127,7 +127,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('./Hero-Bg.png') center/cover no-repeat; /* Hero background image */
+    
 }
 
 .hero-text {
