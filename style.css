@@ -37,7 +37,7 @@ background: linear-gradient(to right, #dd1818, #333333) !important; /* W3C, IE 1
     align-items: center !important;
     top: 0 !important;
     z-index: 1000 !important;
-    position:fixed:
+    position: fixed !important:
 }
 
 /* Logo section */
