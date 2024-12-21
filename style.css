@@ -870,11 +870,14 @@ main{
 
     .mission-card {
         width: 270px; /* Smaller card size for smaller screens */
-        height: 100px;
+        height: 160px;
         flex-direction: column !important;
         font-size: 1.5rem; /* Adjust icon size */
     }
-
+ .mission-card h3 p {
+     font-size: 0.9 rem !important;
+     
+ }
     /* Overlay Adjustments */
     #overlay-content {
         width: 90%; /* Full-width container with max-width */
