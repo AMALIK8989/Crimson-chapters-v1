@@ -280,7 +280,45 @@ main{
     transform: scale(1.1); /* Scale effect on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
+.mission-card:nth-child(1) {
+    background: linear-gradient(to right, #FF5733, #FFC300); /* Orange to yellow */
+}
 
+.mission-card:nth-child(2) {
+    background: linear-gradient(to right, #DAF7A6, #FF8C00); /* Light green to orange */
+}
+
+.mission-card:nth-child(3) {
+    background: linear-gradient(to right, #9C27B0, #FF5722); /* Purple to red */
+}
+
+.mission-card:nth-child(4) {
+    background: linear-gradient(to right, #4CAF50, #8BC34A); /* Green shades */
+}
+
+.mission-card:nth-child(5) {
+    background: linear-gradient(to right, #00BCD4, #3F51B5); /* Teal to blue */
+}
+
+.mission-card:nth-child(6) {
+    background: linear-gradient(to right, #FF9800, #FF5722); /* Orange to deep orange */
+}
+
+.mission-card:nth-child(7) {
+    background: linear-gradient(to right, #673AB7, #FF4081); /* Purple to pink */
+}
+
+.mission-card:nth-child(8) {
+    background: linear-gradient(to right, #00BCD4, #009688); /* Light blue to teal */
+}
+
+.mission-card:nth-child(9) {
+    background: linear-gradient(to right, #3F51B5, #2196F3); /* Blue shades */
+}
+
+.mission-card:nth-child(10) {
+    background: linear-gradient(to right, #8BC34A, #FFEB3B); /* Green to yellow */
+}
 /* Mission content styling */
 .mission-content {
     padding: 20px;
