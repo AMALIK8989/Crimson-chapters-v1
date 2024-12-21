@@ -249,7 +249,7 @@ main{
     margin-bottom: 40px; /* Spacing below icons */
 }
 
-#mission-cards {
+.mission-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns for better balance */
     gap: 20px; /* Increased gap for better separation */
