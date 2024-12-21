@@ -280,44 +280,64 @@ main{
     transform: scale(1.1); /* Scale effect on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
-.mission-card:nth-child(1) {
-    background: linear-gradient(to right, #FF5733, #FFC300); /* Orange to yellow */
+mission-card:nth-child(1) {
+    background: linear-gradient(to right, #ff4b2b, #ff416c); /* Lust and Desire */
 }
 
 .mission-card:nth-child(2) {
-    background: linear-gradient(to right, #DAF7A6, #FF8C00); /* Light green to orange */
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* LGBTQ Pride */
 }
 
 .mission-card:nth-child(3) {
-    background: linear-gradient(to right, #9C27B0, #FF5722); /* Purple to red */
+    background: linear-gradient(to right, #ff006f, #d6007f); /* Passion and Lust */
 }
 
 .mission-card:nth-child(4) {
-    background: linear-gradient(to right, #4CAF50, #8BC34A); /* Green shades */
+    background: linear-gradient(to right, #ff5f6d, #ffc3a0); /* Forbidden and Desire */
 }
 
 .mission-card:nth-child(5) {
-    background: linear-gradient(to right, #00BCD4, #3F51B5); /* Teal to blue */
+    background: linear-gradient(to right, #000428, #004e92); /* Taboo and Darkness */
 }
 
 .mission-card:nth-child(6) {
-    background: linear-gradient(to right, #FF9800, #FF5722); /* Orange to deep orange */
+    background: linear-gradient(to right, #e60000, #ff003d); /* Lust and Desire */
 }
 
 .mission-card:nth-child(7) {
-    background: linear-gradient(to right, #673AB7, #FF4081); /* Purple to pink */
+    background: linear-gradient(to right, #ff007f, #9b00b5); /* Passion and Forbidden */
 }
 
 .mission-card:nth-child(8) {
-    background: linear-gradient(to right, #00BCD4, #009688); /* Light blue to teal */
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Lust and Desire */
 }
 
 .mission-card:nth-child(9) {
-    background: linear-gradient(to right, #3F51B5, #2196F3); /* Blue shades */
+    background: linear-gradient(to right, #8a2be2, #4b0082); /* Taboo and Forbidden */
 }
 
 .mission-card:nth-child(10) {
-    background: linear-gradient(to right, #8BC34A, #FFEB3B); /* Green to yellow */
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* Passion and Lust */
+}
+
+.mission-card:nth-child(11) {
+    background: linear-gradient(to right, #9400d3, #4b0082); /* Desire and Forbidden */
+}
+
+.mission-card:nth-child(12) {
+    background: linear-gradient(to right, #ff0844, #ffb199); /* Sex and Desire */
+}
+
+.mission-card:nth-child(13) {
+    background: linear-gradient(to right, #ff4e50, #f9d423); /* Passion and Lust */
+}
+
+.mission-card:nth-child(14) {
+    background: linear-gradient(to right, #ff416c, #ff4b2b); /* Lust and Desire */
+}
+
+.mission-card:nth-child(15) {
+    background: linear-gradient(to right, #ff7f50, #ff6347); /* Passion and Forbidden */
 }
 /* Mission content styling */
 .mission-content {
