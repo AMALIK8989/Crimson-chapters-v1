@@ -120,7 +120,8 @@ header {
 
 
 /* Hero section styling */
-.hero {
+#hero {
+    margin-top: 20px !important;
     width: 100%;
     height: 600px; /* Takes up the entire remaining viewport height */
     display: flex;
