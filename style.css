@@ -29,15 +29,15 @@ header {
     width: 100% !important;
     height: 136px !important;
     background: #333333;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #dd1818, #333333) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dd1818, #333333) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     display: flex !important;
     justify-content: center !important; /* Center the content in the navbar */
     align-items: center !important;
     top: 0 !important;
     z-index: 1000 !important;
-    position: fixed !important:
+    position: fixed !important; /* Corrected semicolon */
 }
 
 /* Logo section */
@@ -260,7 +260,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 220px; /* Slightly larger card size */
+    width: 320px; /* Slightly larger card size */
     height: 120px;
     
     border: 2px solid #2c3e50; /* Dark border for contrast */
@@ -270,12 +270,12 @@ main{
     margin: 0 auto; /* Center the card */
 }
 
-.card i {
+.mission-card  i {
     font-size: 2.5rem; /* Larger icon size */
     color: #2c3e50; /* Dark icon color for contrast */
 }
 
-.card:hover {
+.mission-card:hover {
     transform: scale(1.1); /* Scale effect on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
