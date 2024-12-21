@@ -874,7 +874,15 @@ main{
         flex-direction: column !important;
         font-size: 1.5rem; /* Adjust icon size */
     }
- .mission-card h3 p {
+    .mission-card i {
+     font-size: 0.9 rem !important;
+     
+ }
+    .mission-card h3 {
+     font-size: 0.9 rem !important;
+     
+    }
+ .mission-card p {
      font-size: 0.9 rem !important;
      
  }
