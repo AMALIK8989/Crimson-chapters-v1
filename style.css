@@ -227,13 +227,13 @@ main{
 .our-mission {
     padding: 40px 20px; /* Increased padding for better spacing */
     text-align: center;
-    background-color: #f9f9f9; /* Light background for contrast */
+    
 }
 
 #our-mission-heading {
     font-size: 2.5rem; /* Increased font size for prominence */
     margin-bottom: 30px;
-    color: #2c3e50; /* Darker color for a more professional look */
+    color: white; /* Darker color for a more professional look */
     font-weight: 700; /* Bold font weight for emphasis */
     line-height: 1.2; /* Adjust line height for better readability */
 }
@@ -289,14 +289,14 @@ main{
 
 .m-content p {
     font-size: 1.125rem; /* Slightly larger font size for readability */
-    color: #34495e; /* Slightly lighter color for text */
+    color: white !important; /* Slightly lighter color for text */
     line-height: 1.6; /* Increased line height for readability */
     margin: 0; /* Remove margin for a cleaner look */
 }
 /* General section styling */
 #our-authors {
     padding: 40px 20px;
-    background-color: #f5f5f5; /* Light background for contrast */
+    
     position: relative;
 }
 
@@ -304,7 +304,7 @@ main{
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #333;
+    color: white;
     text-align: center;
 }
 /* Authors container styling */
