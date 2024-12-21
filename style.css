@@ -37,7 +37,7 @@ background: linear-gradient(to right, #dd1818, #333333) !important; /* W3C, IE 1
     align-items: center !important;
     top: 0 !important;
     z-index: 1000 !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important; /* Adds subtle shadow for depth */
+    position:fixed:
 }
 
 /* Logo section */
@@ -260,9 +260,9 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px; /* Slightly larger card size */
+    width: 220px; /* Slightly larger card size */
     height: 120px;
-    border-radius: 50%; /* Circular border */
+    
     border: 2px solid #2c3e50; /* Dark border for contrast */
     background: #fff; /* White background for clean look */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced floating effect */
