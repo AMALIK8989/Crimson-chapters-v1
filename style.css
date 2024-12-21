@@ -1,0 +1,1062 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --grc: #f6c6c6;
+    --grc1: #4a0c0c;
+    --grc2: #00bfae;
+}
+body{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+/* Header styling */
+header {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+/* Navigation bar styling */
+#nav-bar {
+    width: 100% !important;
+    height: 136px !important;
+    background: linear-gradient(120deg, var(--grc) , var(--grc1) , var(--grc2)) !important;
+    display: flex !important;
+    justify-content: center !important; /* Center the content in the navbar */
+    align-items: center !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important; /* Adds subtle shadow for depth */
+}
+
+/* Logo section */
+.logo-place {
+    width: 40% !important;
+    display: flex !important;
+    justify-content: flex-start !important; /* Align logo to the left */
+}
+
+.logo-place img {
+    max-width: 150px !important;
+    height: auto !important;
+}
+
+/* Navigation list styling */
+.nav-list {
+    display: flex !important;
+    width: 60% !important;
+    justify-content: center !important; /* Center navigation links */
+}
+
+.nav-links {
+    list-style: none !important;
+    display: flex !important;
+}
+
+.nav-links li {
+    position: relative !important; /* Required for dropdown positioning */
+    margin-left: 30px !important;
+    font-size: 18px !important;
+    color: #ffffff !important;
+    cursor: pointer !important;
+    transition: color 0.3s ease !important;
+}
+
+/* Hover effect for navigation links */
+.nav-links li:hover {
+    color: #ff5555 !important; /* Changes color on hover to highlight the link */
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block !important; /* Show the dropdown on hover */
+}
+
+.dropdown-menu {
+    display: none !important; /* Hide dropdown by default */
+    position: absolute !important;
+    top: 100% !important; /* Position below the parent */
+    left: 0 !important;
+    background-color: #333 !important; /* Background color for the dropdown */
+    border-radius: 5px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important; /* Shadow for dropdown */
+    z-index: 1000 !important;
+    padding: 10px 0 !important;
+    width: 200px !important; /* Width of the dropdown menu */
+}
+
+.dropdown-menu li {
+    list-style: none !important;
+}
+
+.dropdown-menu li a {
+    display: block !important;
+    border-bottom: 1px solid white !important;
+    padding: 10px 20px !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #ff5555 !important; /* Highlight color on hover */
+}
+
+
+/* Hero section styling */
+.hero {
+    width: 100%;
+    height: 600px; /* Takes up the entire remaining viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./Asset/Hero-Bg.png') center/cover no-repeat; /* Hero background image */
+}
+
+.hero-text {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the text */
+    border-radius: 10px;
+}
+
+.hero-heading {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    line-height: 1.5;
+}
+main{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+  /* Overlay container */
+#overlayed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Hidden initially */
+    background-color: rgb(255, 255, 255); /* Semi-transparent dark background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures it's above all other content */
+}
+
+/* Styling for the overlay image container */
+.authors-imager {
+    margin-bottom: 20px; /* Space below the image */
+    text-align: center; /* Center the image within the container */
+}
+
+.authors-imager img {
+    width: 100px; /* Set a fixed size for the image */
+    height: 100px;
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    display: inline-block; /* Center the image */
+    object-fit: cover; /* Ensure the image covers the circle */
+}
+
+/* Overlay content */
+#overlay-content {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+    overflow: hidden; /* Ensure rounded corners apply to content */
+}
+
+/* Close button styles */
+.close-btn {
+    position: absolute;
+    top: 15px; /* Adjusted for better positioning */
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.close-btn:hover {
+    color: #e74c3c; /* Bright red for better visibility */
+}
+
+/* Overlay Title */
+#overlay-title {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 15px; /* Adjusted spacing for consistency */
+    color: #333; /* Softer than pure black */
+}
+
+/* Overlay Description */
+#overlay-description {
+    padding: 10px;
+    font-size: 16px;
+    color: #555; /* Softer color for better readability */
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+/* Ensure the container takes up the full width */
+.our-mission {
+    padding: 40px 20px; /* Increased padding for better spacing */
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+#our-mission-heading {
+    font-size: 2.5rem; /* Increased font size for prominence */
+    margin-bottom: 30px;
+    color: #2c3e50; /* Darker color for a more professional look */
+    font-weight: 700; /* Bold font weight for emphasis */
+    line-height: 1.2; /* Adjust line height for better readability */
+}
+
+/* Flex container for mission icons and content */
+.mission-icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    gap: 20px; /* Spacing between cards */
+    margin-bottom: 40px; /* Spacing below icons */
+}
+
+.mission-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for better balance */
+    gap: 20px; /* Increased gap for better separation */
+    max-width: 900px; /* Adjusted width for better control */
+    margin: 0 auto; /* Center the grid */
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px; /* Slightly larger card size */
+    height: 120px;
+    border-radius: 50%; /* Circular border */
+    border: 2px solid #2c3e50; /* Dark border for contrast */
+    background: #fff; /* White background for clean look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced floating effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    margin: 0 auto; /* Center the card */
+}
+
+.card i {
+    font-size: 2.5rem; /* Larger icon size */
+    color: #2c3e50; /* Dark icon color for contrast */
+}
+
+.card:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Mission content styling */
+.mission-content {
+    padding: 20px;
+    max-width: 600px; /* Adjusted width for better balance */
+    margin: 0 auto; /* Center the content */
+}
+
+.m-content p {
+    font-size: 1.125rem; /* Slightly larger font size for readability */
+    color: #34495e; /* Slightly lighter color for text */
+    line-height: 1.6; /* Increased line height for readability */
+    margin: 0; /* Remove margin for a cleaner look */
+}
+/* General section styling */
+#our-authors {
+    padding: 40px 20px;
+    background-color: #f5f5f5; /* Light background for contrast */
+    position: relative;
+}
+
+#our-authors-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+/* Authors container styling */
+.authors {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Author styling */
+.author1,.author2,.author3
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+}
+.author1{
+    background: linear-gradient(to right, #4a0c0c, #7f1d1d, #2e003f);
+    color: whitesmoke; /* Darker tones gradient */
+}
+.author2{
+    background: linear-gradient(to right, #f6c6c6, #f9d8d8, #fff); 
+    color: #333; /* Dark text color for readability *//* Blush pinks and whites gradient */
+}
+.author3{
+    background: linear-gradient(to right, #00bfae, #009688, #ffeb3b); /* Teal, emerald, and sunny yellow gradient */
+    color: #333; /* Dark text color for readability */
+}
+.author1 .author-image, .author2 .author-image2, .author3 .author-image3 {
+    flex: 1;
+    padding: 10px;
+}
+
+.author1 .author-image img, .author2 .author-image2 img, .author3 .author-image3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+#about-author1, #about-author2, #about-author3 {
+    flex: 2;
+    padding: 20px;
+}
+
+/* Zigzag effect */
+.author1:nth-child(odd) #about-author1, .author2:nth-child(odd) #about-author2, .author3:nth-child(odd) #about-author3 {
+    order: 1; /* Content on the right */
+}
+
+.author1:nth-child(even) #about-author1, .author2:nth-child(even) #about-author2, .author3:nth-child(even) #about-author3 {
+    order: -1; /* Content on the left */
+}
+
+.about-author-content, .about-author2-content, .about-author3-content {
+    margin-bottom: 20px;
+}
+
+.author1btn, .author2btn, .author3btn {
+    margin-top: 10px;
+}
+
+.author1btn button, .author2btn button, .author3btn button {
+    background-color: #ff5555; /* Highlight color for button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.author1btn button:hover, .author2btn button:hover, .author3btn button:hover {
+    background-color: #ff3333; /* Darker color on hover */
+}
+/* Styling for the About CrimsonChapters section */
+.About-Crimson {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.About-Crimson h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#crimson-chapters h2 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+#crimson-chapters p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* List styling */
+.why-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.why-list li {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Font Awesome icons for the list */
+.why-list li i {
+    color: crimson; /* Icon color */
+    margin-right: 10px; /* Space between the icon and the text */
+    font-size: 18px;
+}
+
+/* Button Styling */
+.about-crimson-btn button {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.about-crimson-btn button:hover {
+    background-color: darkred;
+}
+.our-stories {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.our-stories h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Story Cards Layout */
+.stories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Story Card Containers */
+.lila-story-cards, 
+.damien-thorn-story-cards, 
+.selena-story-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns by default */
+    gap: 20px;
+    width: 100%; /* Make the story cards fill the container */
+    max-width: 1200px; /* Add a maximum width for the grid layout */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Individual Story Card */
+#story-card {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Story Card Hover Effect */
+#story-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Story Image Placeholder */
+.story-image {
+    height: 200px;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Title & Author Styling */
+.title {
+    padding: 15px;
+    color: #333;
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.written-by {
+    margin-top: 10px;
+    color: #777;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+/* Read Now Button */
+.read-now-btn {
+    padding: 20px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+#read-now {
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+#read-now:hover {
+    background-color: #ff3b3b;
+}
+
+.story-place {
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding: 20px !important;
+    height: Auto;
+}
+
+/* Styling for the story content container */
+#story-here {
+    width:100%; /* Adjust this to control content width */
+    height: auto;
+    background-color: #ffffff; /* White background for the content */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a card-like effect */
+    color: #333; /* Text color */
+    line-height: 1.6; /* Line height for better readability */
+}
+
+#story-here img{ 
+    width: 100%;
+    height: 350px;
+
+}
+/* Add spacing between paragraphs or story content */
+#story-here p {
+    margin-bottom: 15px;
+}
+
+/* Optional: Add some subtle hover effect on the container */
+#story-here:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Slight lift on hover */
+    transition: all 0.3s ease;
+}
+
+.story_content p{
+    width: 100%;
+    height: auto;
+    display: flex;
+    font-size: 19px;
+}
+/* Ensure the novel-place container takes full width and height adjusts automatically */
+.novel-place {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* General styles for the novel container */
+.novel-here {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Styles for the table of contents */
+.novel-content-table {
+    margin-bottom: 30px;
+}
+
+.novel-content-table h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.novel-content-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.novel-content-table th, .novel-content-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1.0rem;
+
+}
+
+.novel-content-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.novel-content-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.novel-content-table a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1.0rem !important;
+
+}
+
+.novel-content-table a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for the chapter content */
+.novel-content {
+    margin-top: 30px;
+}
+
+.novel-content img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Adjust as needed */
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.novel-content h1 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #333;
+}
+.dialogue {
+    margin: 20px 0;
+    padding-left: 20px;
+    font-style: italic;
+}
+.character {
+    font-weight: bold;
+}
+
+.novel-content .Chapter-1 {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.novel-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+#novel-here { 
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.novels-Place {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center; /* Ensures cards are centered in their grid area */
+}
+
+.novel-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 420px; /* Increased height for better content space */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.novel-card:hover {
+    transform: translateY(-10px);
+}
+
+.novel-card img {
+    width: 100%;
+    height: 300px; /* Adjusted to ensure the image doesn't dominate the card */
+    object-fit: cover;
+}
+
+.novel-info {
+    background: transparent;
+    padding: 15px;
+}
+
+.novel-info h3 {
+    margin: 0;
+    font-size: 1.3em; /* Slightly reduced font size for better spacing */
+    color: #333;
+}
+
+.novel-info a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.novel-info a:hover {
+    background-color: #0056b3;
+}
+
+#footer {
+    position: relative;
+    background: linear-gradient( 130deg, var(--grc) 20%, var(--grc1) 50%, var(--grc2) 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+#footer svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    fill: var(--grc);
+}
+.footer-content {
+    position: relative;
+    z-index: 1;
+}
+.useful-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.social-links {
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.social-links a {
+    color: rgb(255, 255, 255); /* This is for the icon color */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links i {
+    font-size: 1.0rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover i {
+    color: #d64d4d; /* Change icon color on hover */
+}
+.copyright {
+    margin-top: 20px;
+}
+@media screen and (min-width: 270px) and (max-width: 915px) {
+    /* Header and Navigation Bar Adjustments */
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    #nav-bar {
+        height: auto !important; /* Allow navbar to adjust height based on content */
+        padding: 10px 0 !important; /* Add padding for better spacing */
+    }
+
+    /* Center the logo */
+    .logo-place {
+        width: 100% !important; /* Allow logo to take full width */
+        justify-content: center !important; /* Center the logo */
+    }
+
+    /* Adjust navigation list */
+    .nav-list {
+        width: 100% !important; /* Allow nav list to take full width */
+        justify-content: center !important; /* Center navigation links */
+    }
+
+    /* Center navigation links */
+    .nav-links li {
+        margin-left: 15px !important; /* Reduce left margin for better spacing */
+        margin-right: 15px !important; /* Add right margin for spacing */
+    }
+
+    /* Dropdown menu adjustments */
+    .dropdown-menu {
+        width: 100% !important; /* Allow dropdown to take full width */
+    }
+
+    /* Ensure dropdown items are centered */
+    .dropdown-menu li a {
+        text-align: center !important; /* Center align dropdown links */
+    }
+
+    /* Hero Section Adjustments */
+    .hero {
+        height: 500px;
+        background-size: 100% 100%; /* Reduced height for smaller screens */
+    }
+
+    .hero-text {
+        font-size: 24px; /* Adjust font size for hero text */
+    }
+
+    .hero-heading {
+        font-size: 24px; /* Adjust font size for heading */
+    }
+
+    /* Mission Section Adjustments */
+    .mission-icons {
+        flex-direction: column; /* Stack icons vertically */
+    }
+
+    .mission-cards {
+        grid-template-columns: repeat(2, 1fr); /* Reduce columns for smaller screens */
+    }
+
+    .card {
+        width: 100px; /* Smaller card size for smaller screens */
+        height: 100px;
+        font-size: 1.5rem; /* Adjust icon size */
+    }
+
+    /* Overlay Adjustments */
+    #overlay-content {
+        width: 90%; /* Full-width container with max-width */
+        padding: 10px; /* Reduced padding */
+    }
+
+    #story-card{
+        width: 450px;
+        height: 400px;
+    }
+
+    /* Author Section Adjustments */
+    .author1, .author2, .author3 {
+        flex-direction: column; /* Stack author details vertically */
+        padding: 10px; /* Reduced padding */
+    }
+
+    .author1btn button, .author2btn button, .author3btn button {
+        padding: 8px 16px; /* Adjust button size */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    /* Reduce padding for smaller screens */
+    .our-stories {
+        padding: 20px;
+    }
+
+    /* Adjust heading size for smaller screens */
+    .our-stories h1 {
+        font-size: 2rem; /* Make the title smaller */
+    }
+
+    /* Stack story cards on smaller screens */
+    .lila-story-cards, 
+    .damien-thorn-story-cards, 
+    .selena-story-cards {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 15px;
+    }
+
+    /* Make story cards take full width on smaller screens */
+    #story-card {
+        width: 100%;
+        max-width: none; /* Remove the max width constraint */
+    }
+
+    /* Adjust font sizes and padding for buttons */
+    #read-now {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+    
+    /* Adjust the title and author section */
+    .title {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .written-by {
+        font-size: 0.85rem;
+    }
+    .novel-place {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    /* Adjust the main novel container's width and padding */
+    .novel-here {
+        padding: 15px; /* Reduce padding for smaller screens */
+        max-width: 100%; /* Allow full width on smaller screens */
+        box-shadow: none; /* Remove shadow for a cleaner look on smaller screens */
+    }
+
+    .novel-content-table h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .novel-content-table table {
+        font-size: 0.9rem;
+    }
+
+    .novel-content-table th, .novel-content-table td {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    .novel-content-table th, .novel-content-table td {
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+
+    .novel-content-table th::before, .novel-content-table td::before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .novel-content-table td::before {
+        font-weight: normal;
+    }
+
+    .novel-content-table a {
+        font-size: 0.9rem !important;
+    }
+    /* Adjustments for the main content area */
+    .novel-content {
+        text-align: left; /* Align text left for better readability on smaller screens */
+    }
+    .novels-Place {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 10px;
+    }
+
+    .novel-card {
+        width: 100%; /* Full width of the screen */
+        max-width: 300px; /* Ensure cards don't get too large on small screens */
+        height: auto; /* Allow card height to be flexible */
+    }
+
+    .novel-card img {
+        height: 200px; /* Reduce image height for smaller screens */
+    }
+
+    .novel-info h3 {
+        font-size: 1em; /* Reduce heading font size */
+    }
+
+    .novel-info a {
+        font-size: 0.85rem; /* Smaller font size for button */
+        padding: 6px 10px; /* Reduced padding for button */
+    }
+    .novel-content img {
+        width: 100%; /* Ensure the image takes full width on smaller screens */
+        margin-bottom: 15px; /* Reduce margin for smaller screens */
+    }
+
+    .novel-content h1 {
+        font-size: 1.2rem; /* Smaller font size for headings */
+    }
+
+    .dialogue {
+        margin: 10px 0; /* Reduce margin for smaller screens */
+        padding-left: 10px; /* Reduce padding to fit content better */
+        font-size: 0.9em; /* Decrease font size slightly for better readability on smaller screens */
+    }
+
+    .character {
+        font-weight: bold;
+        font-size: 1.1em; /* Adjust character name size to make it stand out */
+    }
+    .novel-content .Chapter-1 {
+        font-size: 0.8rem; /* Adjust font size for chapter span */
+    }
+
+    .novel-content p {
+        font-size: 0.9rem; /* Smaller font size for paragraphs */
+        margin: 15px 0; /* Reduce margin for smaller screens */
+    }
+    #footer {
+        padding: 30px 10px; /* Reduced padding for smaller screens */
+    }
+
+    #footer svg {
+        height: 150px; /* Reduced height for smaller screens */
+    }
+
+    .footer-content {
+        padding: 0 10px; /* Adjusted padding to fit better on smaller screens */
+    }
+
+    .useful-links a {
+        display: block; /* Stack links vertically */
+        margin: 10px 0; /* Adjusted margin for vertical spacing */
+    }
+
+    .social-links {
+        margin-top: 15px; /* Reduced margin for social links */
+    }
+
+    .social-links a {
+        margin: 0 5px; /* Reduced margin between icons */
+    }
+
+    .social-links i {
+        font-size: 0.8rem; /* Smaller icon size for better fit on smaller screens */
+    }
+
+    .copyright {
+        font-size: 0.9rem; /* Slightly smaller font size for copyright text */
+        margin-top: 15px; /* Reduced margin for better spacing */
+    }
+}
