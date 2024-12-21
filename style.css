@@ -126,7 +126,7 @@ background: linear-gradient(to right, #dd1818, #333333) !important; /* W3C, IE 1
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('./Asset/Hero-Bg.png') center/cover no-repeat; /* Hero background image */
+    background: url('./Hero-Bg.png') center/cover no-repeat; /* Hero background image */
 }
 
 .hero-text {
