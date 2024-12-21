@@ -875,15 +875,15 @@ main{
         font-size: 1.5rem; /* Adjust icon size */
     }
     .mission-card i {
-     font-size: 0.9 rem !important;
+     font-size: 0.6rem !important;
      
  }
     .mission-card h3 {
-     font-size: 0.9 rem !important;
+     font-size: 0.8rem !important;
      
     }
  .mission-card p {
-     font-size: 0.9 rem !important;
+     font-size: 0.9rem !important;
      
  }
     /* Overlay Adjustments */
