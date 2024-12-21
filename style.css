@@ -256,7 +256,7 @@ main{
     margin: 0 auto; /* Center the grid */
 }
 
-.card {
+.mission-card {
     display: flex;
     justify-content: center;
     align-items: center;
