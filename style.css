@@ -273,9 +273,16 @@ main{
 
 .mission-card  i {
     font-size: 2.5rem; /* Larger icon size */
-    color: #2c3e50; /* Dark icon color for contrast */
+    color: white; /* Dark icon color for contrast */
 }
-
+.mission-card h3{
+    font-size: 2.5rem; 
+    color: white;
+}
+.mission-card p{
+    font-size: 1.5rem; 
+    color: white;
+}
 .mission-card:hover {
     transform: scale(1.1); /* Scale effect on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
@@ -933,7 +940,7 @@ mission-card:nth-child(1) {
         font-size: 1.5rem; /* Adjust icon size */
     }
     .mission-card i {
-     font-size: 0.6rem !important;
+     font-size: 0.9rem !important;
      
  }
     .mission-card h3 {
@@ -941,7 +948,7 @@ mission-card:nth-child(1) {
      
     }
  .mission-card p {
-     font-size: 0.9rem !important;
+     font-size: 1.2rem !important;
      
  }
     /* Overlay Adjustments */
