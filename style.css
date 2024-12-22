@@ -556,7 +556,64 @@ mission-card:nth-child(1) {
     overflow: hidden;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+banner-section {
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+    padding: 60px 0;
+}
 
+/* Banner Card */
+.banner-card {
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Polygon Icon Style */
+.polygon-icon {
+    width: 80px;
+    height: 80px;
+    margin: -50px auto 20px;
+    background: #ff69b4;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Content Inside */
+.card-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Content Outside Card */
+.outside-content {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    color: #777;
+    font-size: 1rem;
+}
+
+/* Hover Effect */
+.banner-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 /* Story Card Hover Effect */
 #story-card:hover {
     transform: translateY(-10px);
